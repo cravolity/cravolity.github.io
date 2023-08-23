@@ -1,0 +1,187 @@
+/**
+* Template Name: Imperial
+* Updated: Jul 27 2023 with Bootstrap v5.3.1
+* Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #03C4EB;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #03c5ec;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/* Prelaoder */
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff url("../img/preloader.svg") no-repeat center center;
+}
+
+/*--------------------------------------------------------------
+# Welcome
+--------------------------------------------------------------*/
+.bg-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg1.webp) top center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* apply the blur */
+  pointer-events: none; /* make the overlay click-through */
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .hero-logo {
+  margin: 20px;
+}
+
+#hero .hero-logo img {
+  max-width: 100%;
+}
+
+#hero .hero-container {
+  /* background: rgba(0, 0, 0, 0.8); */
+  /* display: table-cell; */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 56px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+  font-size: 44px;
+  }
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: large;
+}
+
+#hero h2 span {
+  transition: 0.3s;
+  color: #ccc;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#hero .rotating>.animated {
+  display: inline-block;
+}
+
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+
+#hero .btn-social:hover {
+  /* background-size: 5vw; */
+  transform: translateY(-5px);
+}
+
+#hero .btn-social {
+  content: "";
+  width: 4vw;
+  height: 4vw;
+  background-size: 4vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  #hero .btn-social {
+    width: 10vw;
+    height: 10vw;
+    background-size: 10vw;
+  }
+}
+
+#hero .instagram {
+  background-image: url(../img/svg/instagram.svg);
+}
+
+#hero .youtube {
+  background-image: url(../img/svg/youtube.svg);
+  /* background-size: 3.5vw; */
+}
+
+#hero .discord {
+  background-image: url(../img/svg/discord.svg);
+}
